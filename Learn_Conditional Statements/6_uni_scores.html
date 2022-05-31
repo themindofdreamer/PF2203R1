@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm đại học khối D</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 25px; font-weight: bold;">Tính điểm ĐH khối D</th>
+
+        </tr>
+        <tr>
+            <td>Môn Toán</td>
+            <td><input type="text" id="math"></td>
+        </tr>
+        <tr>
+            <td>Môn Văn</td>
+            <td><input type="text" id="lit"></td>
+        </tr>
+        <tr>
+            <td>Môn Anh</td>
+            <td><input type="text" id="eng"></td>
+        </tr>
+        <tr>
+            <td>Khu vực</td>
+            <td><select name="" id="area">
+                    <option value="0.75">KV1</option>
+                    <option value="0.5">KV2</option>
+                    <option value="0.25">KV2-NT</option>
+                    <option value="0">KV3</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><button onclick="checkScore()">Tính điểm</button></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3>Tổng điểm ĐH khối D của bạn là: <span id="result"></span></h3>
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+<script>
+    function checkScore() {
+        let math = parseFloat(document.getElementById("math").value);
+        let lit = parseFloat(document.getElementById("lit").value);
+        let eng = parseFloat(document.getElementById("eng").value);
+        let areaPoint = parseFloat(document.getElementById("area").value);
+        switch (areaPoint) {
+            case 0.75:
+                document.getElementById ("result").innerHTML = math + lit + eng + 0.75;
+                break;
+                case 0.5:
+                document.getElementById ("result").innerHTML = math + lit + eng + 0.5;
+                break;
+                case 0.25:
+                document.getElementById ("result").innerHTML = math + lit + eng + 0.25;
+                break;
+                case 0:
+                document.getElementById ("result").innerHTML = math + lit + eng;
+                break;
+        }
+    }
+
+</script>
+
+</html>

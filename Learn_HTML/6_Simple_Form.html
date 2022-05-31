@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form đơn giản</title>
+    <style>
+        body {
+            width: 50%;
+            height: auto;
+        }
+
+        .your_hobby {
+            background-color: rgb(8, 46, 151);
+            color: rgb(255, 255, 255);
+            padding: 5px 0;
+            text-align: center;
+        }
+        .title {
+            font-weight: bold;
+        
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- FORM 1 -->
+    <table>
+        <form action="#">
+            <h3 class="your_hobby">SỞ THÍCH CỦA BẠN</h3>
+            <tr>
+                <td  class="title" style="text-align: right;">Họ và tên</td>
+                <td><input type="text" name="Name"></td>
+            </tr>
+
+            <tr>
+                <td class="title" style="text-align: right;">Email</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td class="title" style="text-align: right;">Sở thích</td>
+                <td>
+                    <input type="checkbox" name="hobby1" class="hobby1">Thể thao
+                    <input type="checkbox" name="hobby1" class="hobby1">Âm nhạc
+                    <input type="checkbox" name="hobby1" class="hobby1">Đọc sách
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <td>
+                    <input type="checkbox" name="hobby1" class="hobby1">Lướt web
+                    <input type="checkbox" name="hobby1" class="hobby1">Chơi game
+                    <input type="checkbox" name="hobby1" class="hobby1">Điện ảnh
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <td>
+                    <input type="checkbox" name="hobby1" class="hobby1">Du lịch
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>Gửi thông tin</button>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
