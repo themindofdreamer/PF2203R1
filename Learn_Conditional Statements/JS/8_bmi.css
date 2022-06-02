@@ -1,0 +1,62 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right top, #051937, #45245a, #8e2062, #cc274b, #eb5c12);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.BMIcal {
+    width: 400px;
+    height: 340px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 25%;
+    /* text-align: center; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(166, 164, 255);
+
+}
+
+.BMI-content {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 5px;
+}
+
+.BMI-content h4 {
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    font-size: 16px;
+    
+}
+
+.BMI-content > p {
+    text-align: center;
+}
+
+button {
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right top, #051937, #45245a, #8e2062, #cc274b, #eb5c12);
+    border: 0;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 35px;
+    
+}
