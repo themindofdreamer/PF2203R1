@@ -1,0 +1,93 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #675aff;
+    font-family: poppins;
+}
+
+.app-container {
+    width: 400px;
+    height: 380px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
+
+}
+
+.app-content {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.app-content h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.app-input p {
+    font-size: 14px;
+    margin: 10px 0 ;
+}
+
+.app-input input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.app-select-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 53px;
+}
+
+.app-select-container select {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+i {
+    position: relative;
+    top: 45px;
+}
+
+.app-select p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+button {
+    width: 325px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #675aff;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.reset {
+    border: 0;
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}

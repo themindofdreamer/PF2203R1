@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="./9_curency_convert.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   
+        <div class="app-container">
+            <div class="app-content">
+                <h3>Currency Converter</h3>
+                <div class="app-input">
+                    <p>Enter Amount</p>
+                    <input type="text" id="amount">
+                </div>
+                <div class="app-select-container">
+                    <div class="app-select">
+                        <p>From</p>
+                        <select name="" id="from">
+                            <option value="vnd">VND</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                        </select>
+                    </div>
+                    <div class="app-exchange">
+                        <i class="fa-solid fa-lg fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <div class="app-select">
+                        <p>To</p>
+                        <select name="" id="to">
+                            <option value="usd">USD</option>
+                            <option value="vnd">VND</option>
+                            <option value="eur">EUR</option>
+                        </select>
+                    </div>
+                </div>
+                <p id="result">result</p>
+                <button onclick="exchangeRate()">Get Exchange Rate</button>
+                <!-- <button type="button" value="reset" onclick="clearResult()" class="reset">reset</button> -->
+            </div>
+        </div>
+
+</body>
+<script>
+
+    function exchangeRate() {
+        let money = Number(document.getElementById("amount").value);
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        if (from == "vnd" && to == "usd") {
+            document.getElementById("result").innerHTML = (money / 23069);
+        } else if (from == "usd" && to == "vnd") {
+            document.getElementById("result").innerHTML = (money * 23069);
+        } else if (from == "vnd" && to == "eur") {
+            document.getElementById("result").innerHTML = (money / 24729);
+        } else {
+            document.getElementById("result").innerHTML = (money * 24729);
+        }
+    }
+    // function clearResult() {
+    //     document.getElementById("form1").reset();
+    // }
+</script>
+
+</html>
